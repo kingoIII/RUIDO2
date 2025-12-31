@@ -1,0 +1,7 @@
+{
+  "name": "Ruido - Exclusive Sound Library",
+  "description": "A high-end marketplace for exclusive sample packs where each sound is limited to only 5 licenses. Features an AI-powered creative assistant that suggests samples and producers based on your project description.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
