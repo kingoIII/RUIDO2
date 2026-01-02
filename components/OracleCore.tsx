@@ -97,8 +97,9 @@ const OracleCore: React.FC<OracleCoreProps> = ({ user, setUser, onSelectSample, 
     }
   };
 
-  return (
+  return (NEW
     <div className="w-full max-h-[calc(100vh-200px)] h-auto min-h-[360px] flex flex-col glass rounded-[50px] overflow-hidden border border-white/5 shadow-2xl relative">
+    <div className="w-full h-[calc(100vh-200px)] min-h-[600px] flex flex-col glass rounded-[50px] overflow-hidden border border-white/5 shadow-2xl relative">
       <div className="absolute inset-0 bg-gradient-to-b from-cyan-900/5 via-transparent to-black/80 pointer-events-none"></div>
       
       {/* Header */}

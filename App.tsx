@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { Search, Volume2, LayoutGrid, ShoppingBag, Terminal, ShieldCheck, Cpu, Zap, LogOut, X, Package } from 'lucide-react';
 import { SAMPLES as INITIAL_SAMPLES, SOUND_PACKS } from './constants';
@@ -170,6 +169,12 @@ const App: React.FC = () => {
                       <ShieldCheck size={16} /> Secure Registry Active
                    </div>
                   <h2 className="font-display text-6xl sm:text-[6.5rem] md:text-[8rem] font-black leading-[0.9] tracking-tighter mb-12 uppercase max-w-[90vw] mx-auto">
+            <div className="animate-in pt-16 md:pt-32">
+               <div className="text-center">
+                   <div className="mb-12 inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-white/5 border border-white/10 text-[10px] font-black uppercase tracking-[0.5em] text-cyan-500">
+                      <ShieldCheck size={16} /> Secure Registry Active
+                   </div>
+                  <h2 className="font-display text-7xl sm:text-9xl md:text-[12rem] font-black leading-[0.8] tracking-tighter mb-16 uppercase">
                     BEYOND <br />
                     <span className="text-transparent bg-clip-text accent-gradient italic">RARE.</span>
                   </h2>
@@ -190,6 +195,7 @@ const App: React.FC = () => {
                </div>
 
                <div className="mt-24 -mx-6 md:-mx-12 overflow-hidden py-12 md:py-24 bg-black/20 border-y border-white/5">
+               <div className="mt-40 -mx-6 md:-mx-12 overflow-hidden py-24 bg-black/20 border-y border-white/5">
                   <div className="flex animate-marquee gap-10">
                     {[...SOUND_PACKS, ...SOUND_PACKS].map((pack, i) => (
                       <div key={i} className="w-80 shrink-0">
