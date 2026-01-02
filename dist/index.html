@@ -73,12 +73,12 @@
         }
 
         @keyframes splash-fade {
-            0% { opacity: 0; transform: translateY(8vh) scale(0.98); filter: blur(6px); }
-            50% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
-            100% { opacity: 0; transform: translateY(-8vh) scale(0.98); filter: blur(6px); }
+            0% { opacity: 0; transform: scale(0.9) translateZ(-50px); filter: blur(15px); }
+            50% { opacity: 1; transform: scale(1) translateZ(0); filter: blur(0); }
+            100% { opacity: 0; transform: scale(1.05) translateZ(50px); filter: blur(10px); }
         }
         .animate-splash {
-            animation: splash-fade 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+            animation: splash-fade 1.2s ease-in-out forwards;
         }
 
         @keyframes slide-in-bottom {
@@ -94,7 +94,7 @@
     </style>
 
 </head>
-<body>
+<body class="perspective-2000">
     <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>

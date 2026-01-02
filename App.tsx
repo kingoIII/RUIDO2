@@ -163,6 +163,12 @@ const App: React.FC = () => {
       <main className="flex-1 pt-24 pb-40">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           {activeView === 'LANDING' && (
+            <div className="animate-in pt-16 md:pt-32 min-h-[60vh] flex flex-col justify-center items-center">
+               <div className="text-center max-w-6xl mx-auto px-4">
+                   <div className="mb-12 inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-white/5 border border-white/10 text-[10px] font-black uppercase tracking-[0.5em] text-cyan-500">
+                      <ShieldCheck size={16} /> Secure Registry Active
+                   </div>
+                  <h2 className="font-display text-6xl sm:text-[6.5rem] md:text-[8rem] font-black leading-[0.9] tracking-tighter mb-12 uppercase max-w-[90vw] mx-auto">
             <div className="animate-in pt-16 md:pt-32">
                <div className="text-center">
                    <div className="mb-12 inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-white/5 border border-white/10 text-[10px] font-black uppercase tracking-[0.5em] text-cyan-500">
@@ -188,6 +194,7 @@ const App: React.FC = () => {
                   </div>
                </div>
 
+               <div className="mt-24 -mx-6 md:-mx-12 overflow-hidden py-12 md:py-24 bg-black/20 border-y border-white/5">
                <div className="mt-40 -mx-6 md:-mx-12 overflow-hidden py-24 bg-black/20 border-y border-white/5">
                   <div className="flex animate-marquee gap-10">
                     {[...SOUND_PACKS, ...SOUND_PACKS].map((pack, i) => (

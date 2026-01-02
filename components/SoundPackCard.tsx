@@ -11,7 +11,7 @@ const SoundPackCard: React.FC<SoundPackCardProps> = ({ pack, onClick }) => {
   return (
     <div 
       onClick={() => onClick(pack)}
-      className="group relative w-80 h-[500px] shrink-0 glass rounded-[60px] overflow-hidden card-3d preserve-3d mx-6 cursor-pointer border border-white/5 hover:border-cyan-500/30 transition-all duration-700"
+      className="group relative w-72 sm:w-80 h-[360px] sm:h-[420px] shrink-0 glass rounded-[48px] overflow-hidden card-3d preserve-3d mx-6 cursor-pointer border border-white/5 hover:border-cyan-500/30 transition-all duration-700"
     >
       <img 
         src={pack.coverImage} 
