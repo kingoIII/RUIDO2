@@ -21,7 +21,7 @@ const GenreExplosion: React.FC<GenreExplosionProps> = ({ onClose, onSelect }) =>
       <div className="max-w-6xl w-full">
         <div className="flex flex-col items-center mb-20">
            <Radio size={48} className="text-cyan-500 mb-6 animate-pulse" />
-           <h2 className="text-center font-display font-black text-5xl md:text-8xl text-white mb-4 tracking-tighter uppercase italic leading-none">
+           <h2 className="text-center font-display font-black text-4xl md:text-6xl text-white mb-4 tracking-tighter uppercase italic leading-none">
             Tune Frequency
           </h2>
           <p className="text-[12px] font-black uppercase tracking-[1em] text-white/20">Select Transmission Channel</p>

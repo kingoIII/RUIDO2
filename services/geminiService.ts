@@ -1,7 +1,12 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { SAMPLES, PRODUCERS } from "../constants";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+// Read API key from Vite env (VITE_ prefix is embedded into client bundle)
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY as string | undefined;
+if (!apiKey) {
+  throw new Error("Missing VITE_GEMINI_API_KEY in environment. Add it to .env.local or set it in your host env variables.");
+}
+const ai = new GoogleGenAI({ apiKey });
 
 export async function getCreativeRecommendations(
   userPrompt: string, 
